@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>FlyAway Portal</title>
+	<style>
+		h1{ color:#5c2a68; }
+		
+		.bffieldset{
+			width:30%;
+			background-color: #eee;
+		}
+		
+		.bflegend {
+			background-color: #2b2b2b;
+			color: white;
+			padding: 5px 10px;
+			font-weight:bold;
+		}
+		
+		input {
+			margin: 5px;
+		}
+		
+		input[type=submit]{
+			  background-color: #3c3c3c;
+			  border: none;
+			  color: white;
+			  padding: 5px 15px;
+			  cursor: pointer;
+		}
+		
+	</style>
+	</head>
+	
+	<body>
+		<h1>FlyAway Airline Booking Portal</h1>
+		<fieldset class="bffieldset">
+		<legend class="bflegend">Search Flights</legend>
+
+		<form action="searchservlet" method="post">
+			<table>
+				<tr><td><label>From : </label></td><td><input type="text" name=fromCity></td></tr>
+				<tr><td><label>To :   </label></td><td><input type="text" name=toCity></td></tr>
+				<tr><td><label>Date : </label></td><td><input type="text" name=date></td></tr>
+				
+				<tr></tr><tr></tr><tr></tr>
+				<tr><td><input type="submit" id="search" class="searchbtn" value=" SEARCH "></td></tr>
+			</table>
+		</form><br/>
+		</fieldset>
+	</body>
+</html>
